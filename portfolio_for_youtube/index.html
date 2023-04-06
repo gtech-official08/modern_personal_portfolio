@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome cdn link -->
+    <script src="https://kit.fontawesome.com/676eaf438a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="./style.css">
+    <title>G-Tech | Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Main Section -->
+    <div class="container-fluid px-0 mx-0 main_section">
+        <!-- Side Navbar Section -->
+
+        <!-- Navbar For Large Screen -->
+        <div class="navbar_section left_section">
+            <div class="logo_section px-3 py-4 mb-5">
+                <img src="./img/logo.png" alt="G-Tech Logo" class="logo">
+                <button type="button" class="btn menu_bar">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+            <!-- Nav items -->
+            <div class="nav_items_section py-4 px-0">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="btn nav-link active py-3" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">
+                        <i class="fa-solid fa-house mx-3 pt-1"></i> Home
+                    </button>
+                    <button class="btn nav-link py-3" id="v-pills-about-us-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-about-us" type="button" role="tab" aria-controls="v-pills-about-us"
+                        aria-selected="true">
+                        <i class="fa-solid fa-address-card mx-3 pt-1"></i> About Us
+                    </button>
+                    <button class="btn nav-link py-3" id="v-pills-services-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-services" type="button" role="tab" aria-controls="v-pills-services"
+                        aria-selected="true">
+                        <i class="fa-solid fa-sliders mx-3 pt-1"></i> Services
+                    </button>
+                    <button class="btn nav-link py-3" id="v-pills-portfolio-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-portfolio" type="button" role="tab" aria-controls="v-pills-portfolio"
+                        aria-selected="true">
+                        <i class="fa-solid fa-briefcase mx-3 pt-1"></i> Portfolio
+                    </button>
+                    <button class="btn nav-link py-3" id="v-pills-blog-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-blog" type="button" role="tab" aria-controls="v-pills-blog"
+                        aria-selected="true">
+                        <i class="fa-solid fa-blog mx-3 pt-1"></i> Blogs
+                    </button>
+                    <button class="btn nav-link py-3" id="v-pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact"
+                        aria-selected="true">
+                        <i class="fa-solid fa-address-book mx-3 pt-1"></i> Contact
+                    </button>
+                </div>
+            </div>
+            <div class="social_links p-3">
+                <a href="#" class="social_link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="social_link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social_link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social_link">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navbar for small devices -->
+        <div class="top_logo_menu_section py-3.px-4">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+            <!-- Modal Button call -->
+            <button type="button" class="btn menu_bar" data-bs-toggle="modal" data-bs-target="#socialLinkButton">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Bottom Navbar Section -->
+        <div class="bottom_section py-3">
+            <div class="nav_items_box px-2">
+                <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="btn nav-link active py-2" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">
+                            <i class="fa-solid fa-house"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn nav-link py-2" id="v-pills-about-us-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-about-us" type="button" role="tab" aria-controls="v-pills-about-us"
+                            aria-selected="true">
+                            <i class="fa-solid fa-address-card"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn nav-link py-2" id="v-pills-services-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-services" type="button" role="tab" aria-controls="v-pills-services"
+                            aria-selected="true">
+                            <i class="fa-solid fa-sliders"></i> 
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn nav-link py-2" id="v-pills-portfolio-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-portfolio" type="button" role="tab" aria-controls="v-pills-portfolio"
+                            aria-selected="true">
+                            <i class="fa-solid fa-briefcase"></i> 
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn nav-link py-2" id="v-pills-blog-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-blog" type="button" role="tab" aria-controls="v-pills-blog"
+                            aria-selected="true">
+                            <i class="fa-solid fa-blog"></i> 
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn nav-link py-2" id="v-pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact"
+                            aria-selected="true">
+                            <i class="fa-solid fa-address-book"></i> 
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Account Link for small devices -->
+        <div class="modal fade" id="socialLinkButton" tabindex="-1" aria-labelledby="socialLinkButtonLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered model-sm">
+                <div class="modal-content px-3">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="socialLinkButtonLabel">Get In Touch</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="social_account_section">
+                            <a href="#" class="social_account">
+                                <div class="account_box">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="social_account">
+                                <div class="account_box">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="social_account">
+                                <div class="account_box">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="social_account">
+                                <div class="account_box">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn work_together_btn w-100">Let's work together</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body Content Section -->
+        <div class="body_content right_section">
+            <div class="content_body p-3">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <div class="home_section">
+                            <div class="my_info_section mb-lg-0 mb-sm-3 mb-3">
+                                <h6 class="greeting mb-3">Hey, 👋 I am</h6>
+                                <h3 class="fullname mb-3">G-Tech Official</h3>
+                                <h6 class="my_profession mb-4">I'm a Full-Stack Developer, 💻</h6>
+                                <p class="desc pe-lg-5 pe-md-3 pe-sm-0 pe-0 mb-lg-5 mb-sm-4 mb-4">
+                                    I help you build brand for your business at an affordable price. Thousands of
+                                    clients have procured exceptional results while working with our dedicated team.
+                                    when an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book.
+                                </p>
+                                <button class="btn hire_me_btn">Hire Me</button>
+                            </div>
+                            <div class="image_section">
+                                <img src="./img/g_tech.jpg" alt="My Image" class="my_img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-about-us" role="tabpanel"
+                        aria-labelledby="v-pills-about-us-tab">
+                        <div class="about_section mb-4 pb-4">
+                            <div class="about_img_box mb-lg-0 mb-sm-4 mb-4">
+                                <img src="./img/g_tech.jpg" alt="My Image" class="about_img">
+                            </div>
+                            <div class="info_section">
+                                <h6 class="tag">About Me</h6>
+                                <div class="line_box mb-4">
+                                    <div class="line"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="about_title mb-4">
+                                    I'm a Freelancer, Full-Stack Developer with over 1 years of experience.
+                                </div>
+                                <p class="desc mb-lg-5 mb-sm-4 mb-4">
+                                    I help you build brand for your business at an affordable price. Thousands of
+                                    clients have procured exceptional results while working with our dedicated team.
+                                    when an unknown printer.
+                                </p>
+                                <div class="btn_section">
+                                    <button class="btn btn_cv px-4">Download CV</button>
+                                    <button class="btn btn_talk px-4">Let's Talk</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="achievement_section mb-4 py-5">
+                            <div class="achievement_box p-3">
+                                <h3 class="total_count">10+</h3>
+                                <h6 class="achievement_title">Years Experience</h6>
+                            </div>
+                            <div class="achievement_box p-3">
+                                <h3 class="total_count">1000+</h3>
+                                <h6 class="achievement_title">Satisfied Customers</h6>
+                            </div>
+                            <div class="achievement_box p-3">
+                                <h3 class="total_count">1050+</h3>
+                                <h6 class="achievement_title">Completed Projects</h6>
+                            </div>
+                            <div class="achievement_box p-3 last_child">
+                                <h3 class="total_count">50+</h3>
+                                <h6 class="achievement_title">Won Awards</h6>
+                            </div>
+                        </div>
+                        <div class="skill_education_section pb-4">
+                            <h6 class="tag">Skill & Education</h6>
+                            <div class="line_box mb-4">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="skill_education_box">
+                                <div class="skill_section">
+                                    <div class="progress_section mb-3">
+                                        <div class="progress_bar_section">
+                                            <h5 class="progress_title">HTML5</h5>
+                                            <div class="progress_count me-3">80%</div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:80%"
+                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_section mb-3">
+                                        <div class="progress_bar_section">
+                                            <h5 class="progress_title">CSS3</h5>
+                                            <div class="progress_count me-3">75%</div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:75%"
+                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_section mb-3">
+                                        <div class="progress_bar_section">
+                                            <h5 class="progress_title">React</h5>
+                                            <div class="progress_count me-3">60%</div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:60%"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_section mb-3">
+                                        <div class="progress_bar_section">
+                                            <h5 class="progress_title">Django</h5>
+                                            <div class="progress_count me-3">70%</div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:70%"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_section mb-3">
+                                        <div class="progress_bar_section">
+                                            <h5 class="progress_title">NodeJs</h5>
+                                            <div class="progress_count me-3">55%</div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:55%"
+                                                aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="education_section">
+                                    <div class="education_box p-lg-2 p-sm-3 p-3 mb-3">
+                                        <img src="./img/g_tech.jpg" alt="Education Institute Image"
+                                            class="education_img">
+                                        <div class="education_info">
+                                            <h6 class="education_title">Bachelor Degree</h6>
+                                            <div class="duration">
+                                                <div class="start_date">01 sept, 2019</div>
+                                                <div class="indicator"></div>
+                                                <div class="end_date">01 april, 2022</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="education_box p-lg-2 p-sm-3 p-3 mb-3">
+                                        <img src="./img/g_tech.jpg" alt="Education Institute Image"
+                                            class="education_img">
+                                        <div class="education_info">
+                                            <h6 class="education_title">Bachelor Degree</h6>
+                                            <div class="duration">
+                                                <div class="start_date">01 sept, 2019</div>
+                                                <div class="indicator"></div>
+                                                <div class="end_date">01 april, 2022</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="education_box p-lg-2 p-sm-3 p-3 mb-3">
+                                        <img src="./img/g_tech.jpg" alt="Education Institute Image"
+                                            class="education_img">
+                                        <div class="education_info">
+                                            <h6 class="education_title">Bachelor Degree</h6>
+                                            <div class="duration">
+                                                <div class="start_date">01 sept, 2019</div>
+                                                <div class="indicator"></div>
+                                                <div class="end_date">01 april, 2022</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="education_box p-lg-2 p-sm-3 p-3 mb-3">
+                                        <img src="./img/g_tech.jpg" alt="Education Institute Image"
+                                            class="education_img">
+                                        <div class="education_info">
+                                            <h6 class="education_title">Bachelor Degree</h6>
+                                            <div class="duration">
+                                                <div class="start_date">01 sept, 2019</div>
+                                                <div class="indicator"></div>
+                                                <div class="end_date">01 april, 2022</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-services" role="tabpanel"
+                        aria-labelledby="v-pills-services-tab">
+                        <div class="services_section">
+                            <h6 class="tag">Services</h6>
+                            <div class="line_box mb-4">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="our_services_section">
+                                <div class="services_box p-3">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/922/922699.png" alt="Service Image"
+                                        class="service_logo">
+                                    <div class="service_info">
+                                        <h5 class="service_title">Web Design</h5>
+                                        <p class="service_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente beatae ea
+                                            suscipit fugiat iste quam incidunt in eius iure harum?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="services_box p-3">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/7991/7991055.png"
+                                        alt="Service Image" class="service_logo">
+                                    <div class="service_info">
+                                        <h5 class="service_title">Web Development</h5>
+                                        <p class="service_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente beatae ea
+                                            suscipit fugiat iste quam incidunt in eius iure harum?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="services_box p-3">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/5608/5608615.png"
+                                        alt="Service Image" class="service_logo">
+                                    <div class="service_info">
+                                        <h5 class="service_title">App Development</h5>
+                                        <p class="service_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente beatae ea
+                                            suscipit fugiat iste quam incidunt in eius iure harum?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="services_box p-3">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2620/2620971.png"
+                                        alt="Service Image" class="service_logo">
+                                    <div class="service_info">
+                                        <h5 class="service_title">UX/UI Design</h5>
+                                        <p class="service_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente beatae ea
+                                            suscipit fugiat iste quam incidunt in eius iure harum?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-portfolio" role="tabpanel"
+                        aria-labelledby="v-pills-portfolio-tab">
+                        <div class="portfolio_section">
+                            <h6 class="tag">Our Portfolio</h6>
+                            <div class="line_box mb-4">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="our_portfolio_section">
+                                <div class="portfolio_box">
+                                    <img src="https://cdn.pixabay.com/photo/2019/05/24/02/44/vintage-4225352__340.jpg"
+                                        alt="Project Image" class="portfolio_img">
+                                    <div class="portfolio_info_section p-3">
+                                        <h5 class="portfolio_title mb-4">E-commerce Website Development</h5>
+                                        <p class="portfolio_desc pb-4">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, culpa.
+                                        </p>
+                                        <div class="btn_section">
+                                            <button class="btn-sm btn_live_demo px-3">Live Demo</button>
+                                            <button class="btn-sm btn_view_detail px-3">View Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio_box">
+                                    <img src="https://cdn.pixabay.com/photo/2017/01/29/13/21/mobile-devices-2017980__340.png"
+                                        alt="Project Image" class="portfolio_img">
+                                    <div class="portfolio_info_section p-3">
+                                        <h5 class="portfolio_title mb-4">E-commerce Website Development</h5>
+                                        <p class="portfolio_desc pb-4">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, culpa.
+                                        </p>
+                                        <div class="btn_section">
+                                            <button class="btn-sm btn_live_demo px-3">Live Demo</button>
+                                            <button class="btn-sm btn_view_detail px-3">View Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio_box">
+                                    <img src="https://cdn.pixabay.com/photo/2019/11/19/20/11/robo-adviser-4638382__340.jpg"
+                                        alt="Project Image" class="portfolio_img">
+                                    <div class="portfolio_info_section p-3">
+                                        <h5 class="portfolio_title mb-4">E-commerce Website Development</h5>
+                                        <p class="portfolio_desc pb-4">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, culpa.
+                                        </p>
+                                        <div class="btn_section">
+                                            <button class="btn-sm btn_live_demo px-3">Live Demo</button>
+                                            <button class="btn-sm btn_view_detail px-3">View Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-blog" role="tabpanel" aria-labelledby="v-pills-blog-tab">
+                        <div class="blog_section">
+                            <h6 class="tag">Our Latest Blog</h6>
+                            <div class="line_box mb-4">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="our_blog_section">
+                                <div class="blog_box">
+                                    <div class="blog_img_box">
+                                        <img src="https://cdn.pixabay.com/photo/2021/12/20/12/45/woman-6882918__340.jpg"
+                                            alt="Our Blog Image" class="blog_img">
+                                        <div class="publisher_owner_date_box p-2">
+                                            <h6 class="blog_publisher mb-0">
+                                                <i class="fa-solid fa-user me-2"></i> G-Tech Official
+                                            </h6>
+                                            <p class="mb-0 blog_publish_date">
+                                                <i class="fa-solid fa-calendar me-2"></i> 02 April, 2023
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="blog_title mb-3">What is G-Tech Official?</h5>
+                                        <p class="blog_desc mb-4">
+                                            G-Tech is the company which is always provide the technological services
+                                            like web design/development, app development, etc.
+                                        </p>
+                                        <button class="btn w-100 btn_read_more">Read More</button>
+                                    </div>
+                                </div>
+                                <div class="blog_box">
+                                    <div class="blog_img_box">
+                                        <img src="https://cdn.pixabay.com/photo/2022/12/26/19/28/metaverse-7679620__340.jpg"
+                                            alt="Our Blog Image" class="blog_img">
+                                        <div class="publisher_owner_date_box p-2">
+                                            <h6 class="blog_publisher mb-0">
+                                                <i class="fa-solid fa-user me-2"></i> G-Tech Official
+                                            </h6>
+                                            <p class="mb-0 blog_publish_date">
+                                                <i class="fa-solid fa-calendar me-2"></i> 02 April, 2023
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="blog_title mb-3">What is G-Tech Official?</h5>
+                                        <p class="blog_desc mb-4">
+                                            G-Tech is the company which is always provide the technological services
+                                            like web design/development, app development, etc.
+                                        </p>
+                                        <button class="btn w-100 btn_read_more">Read More</button>
+                                    </div>
+                                </div>
+                                <div class="blog_box">
+                                    <div class="blog_img_box">
+                                        <img src="https://cdn.pixabay.com/photo/2022/06/01/13/32/metaverse-7235813__340.jpg"
+                                            alt="Our Blog Image" class="blog_img">
+                                        <div class="publisher_owner_date_box p-2">
+                                            <h6 class="blog_publisher mb-0">
+                                                <i class="fa-solid fa-user me-2"></i> G-Tech Official
+                                            </h6>
+                                            <p class="mb-0 blog_publish_date">
+                                                <i class="fa-solid fa-calendar me-2"></i> 02 April, 2023
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="blog_title mb-3">What is G-Tech Official?</h5>
+                                        <p class="blog_desc mb-4">
+                                            G-Tech is the company which is always provide the technological services
+                                            like web design/development, app development, etc.
+                                        </p>
+                                        <button class="btn w-100 btn_read_more">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-contact" role="tabpanel"
+                        aria-labelledby="v-pills-contact-tab">
+                        <div class="contact_section">
+                            <h6 class="tag">Get In Touch</h6>
+                            <div class="line_box mb-4">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="contact_box">
+                                <div class="contact_detail_box">
+                                    <div class="contact_info_box p-3 mb-4">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/535/535239.png"
+                                            alt="Contact Image" class="contact_img">
+                                        <h6 class="contact_title">
+                                            Web development 17, dm on Instagram
+                                        </h6>
+                                    </div>
+                                    <div class="contact_info_box p-3 mb-4">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/6596/6596115.png"
+                                            alt="Contact Image" class="contact_img">
+                                        <h6 class="contact_title">
+                                            Dm On Instagram for Information and discussion
+                                        </h6>
+                                    </div>
+                                    <div class="contact_info_box p-3 mb-4">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/10285/10285973.png"
+                                            alt="Contact Image" class="contact_img">
+                                        <h6 class="contact_title">
+                                            Dm On Instagram for Information and discussion
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="contact_form_box">
+                                    <form method="post">
+                                        <div class="mb-4">
+                                            <div class="two_field">
+                                                <div class="input_field">
+                                                    <label for="firstname" class="mb-2 label_title">First Name *</label>
+                                                    <input type="text" id="firstname" class="form-control"
+                                                        placeholder="First Name...">
+                                                </div>
+                                                <div class="input_field">
+                                                    <label for="lastname" class="mb-2 label_title">Last Name *</label>
+                                                    <input type="text" id="lastname" class="form-control"
+                                                        placeholder="Last Name...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="two_field">
+                                                <div class="input_field">
+                                                    <label for="email" class="mb-2 label_title">Email Adsress *</label>
+                                                    <input type="email" id="email" class="form-control"
+                                                        placeholder="Email Address...">
+                                                </div>
+                                                <div class="input_field">
+                                                    <label for="subject" class="mb-2 label_title">Subject *</label>
+                                                    <input type="text" id="subject" class="form-control"
+                                                        placeholder="e.g. Web Development">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="project_desc" class="mb-2 label_title"></label>
+                                            <textarea name="project_desc" id="project_desc" cols="30" rows="4"
+                                                class="form-control"
+                                                placeholder="Please specify your project description here..."></textarea>
+                                        </div>
+                                        <button type="submit" class="btn_submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom javascript  -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
